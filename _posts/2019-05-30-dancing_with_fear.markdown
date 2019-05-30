@@ -6,7 +6,7 @@ permalink:  dancing_with_fear
 ---
 
 
-My decision to learn software development has brought much joy and excitement to my life in that it very much aligns with what I am looking for in terms of continuous learning and meaningful work.
+My decision to dive into software development has brought much joy and excitement to my life in that it very much aligns with what I am looking for in terms of continuous learning and meaningful work.
 
 Getting to this point, however, was difficult and plagued with doubts.
 
