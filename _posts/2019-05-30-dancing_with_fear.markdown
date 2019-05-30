@@ -10,7 +10,7 @@ My decision to dive into software development has brought much joy and excitemen
 
 Getting to this point, however, was difficult and plagued with doubts.
 
-To give a brief background, my degrees are in business. I have undergraduate degrees in finance and marketing and a MBA with concentration in supply chain management. Given that my education was not necessarily abstract-thinking or technical in nature (and also that grad school was nearly eight years ago), I truly did not believe I had the right kind of mind or study skills necessary to pursue software engineering. Through an accretion of poor habits and loss of motivation, I found myself always low in energy and at a point in life where I had a dead-end job and was in a state of complacency. 
+To give a brief background, my degrees are in business. I have undergraduate degrees in finance and marketing and a MBA with a concentration in supply chain management. Given that my education was not necessarily abstract-thinking or technical in nature (and also that grad school was nearly eight years ago), I truly did not believe I had the right kind of mind or study skills necessary to pursue software engineering. Through an accretion of poor habits and loss of motivation, I found myself always low in energy and at a point in life where I had a dead-end job and was in a state of complacency. 
 
 # Take Massive Action
 
