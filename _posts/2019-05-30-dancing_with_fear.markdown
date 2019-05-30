@@ -19,9 +19,8 @@ I knew I needed a change, but it had to start with managing my energy levels and
 I began removing many distractions in my life to focus on getting the wheels in motion for this transition. As the saying goes,* "if you don't sacrifice for what you want, what you want becomes the sacrifice."* I later progressed to listening primarily to programming related podcasts and dabbled in a few prep classes in order to be more immersed and excited about the topic. At this point, I still had lingering doubts but I was going to go for it anyways. I went from telling those close to me that “I am thinking” or “I want” to “I am” enrolling in a software engineering bootcamp.
 
 
-*
-“I can be fearful and do it anyway. I don’t have to get rid of the fear, I just have to dance with it.”  - Tony Robbins
-*
+
+> “I can be fearful and do it anyway. I don’t have to get rid of the fear, I just have to dance with it.”  - Tony Robbins
 
 
 Fast forward a couple months, here I am, enrolled in Flatiron School’s Software Engineering program and loving it!
