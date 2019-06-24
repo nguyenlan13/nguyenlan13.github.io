@@ -10,7 +10,7 @@ First project is finally done!
 
 The project scope comprised of using Object Oriented Ruby to create a command line interface (CLI) to access data that is scraped from a website. The data that is being accessed is two levels deep; a level refers to where a user can choose an option and then receive more information about their choice. 
 
-# Idea Generation
+# Idea generation
 I decided to choose a topic that has recently peaked my interest, group fitness classes. My thought was to create an application that showed a list of different group fitness class offerings to choose from and after a user selects a class, return the class schedule information for the gym locations nearby. I looked through numerous gym websites that offered group fitness classes but a majority of the sites did not meet the two levels deep requirement. LA Fitness was the only gym I found that seemed to fit the criteria for my plan. I ran into issues during the second level scrape, however and it caused me major delays in obtaining the data on the second page.
 
 # Project layout
