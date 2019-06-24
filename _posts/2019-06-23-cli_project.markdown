@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Project"
-date:       2019-06-24 03:11:31 +0000
+date:       2019-06-23 23:11:31 -0400
 permalink:  cli_project
 ---
 
@@ -88,7 +88,7 @@ After numerous days of refactoring and debugging, the command line interface is 
 
 After the user selects a class, they are given the class description and prompted to input their zip code. It will then display a list of the locations ad schedule information for that class within a 10 mile radius.  Here is a short demo of the CLI:
 
-[https://youtu.be/lGrpFGqfbEM)
+[https://youtu.be/lGrpFGqfbEM](http://)
 
 
 
