@@ -17,6 +17,7 @@ I decided to choose a topic that has recently peaked my interest, group fitness 
 To provide separation of concerns, I created separate classes for GroupFitness, GymLocation, Scraper, and the CLI. 
 I first made a rough outline of the Groupfitness and Gymlocation classes since I had a better idea of what information I wanted the two classes to contain. The GroupFitness class is responsible for initializing each fitness class object with a name, description, and id value then saves it to the @@all class variable. 
 
+
 ```
 class Fitness::GroupFitness
 
