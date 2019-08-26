@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Sinatra Project - Shelf Development"
-date:       2019-08-26 10:27:37 +0000
+date:       2019-08-26 06:27:38 -0400
 permalink:  sinatra_project_-_shelf_development
 ---
 
 
-# Scope
+
 The project scope is comprised of utilizing CRUD (create, read, update, destroy) actions in a MVC (Model-View-Controller) structure and Sinatra framework to create a web application that keeps track of a collection.
 
 # Topic: Self-Development
