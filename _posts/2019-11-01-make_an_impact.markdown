@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Make an imPACT"
-date:       2019-11-01 14:04:21 +0000
+date:       2019-11-01 10:04:23 -0400
 permalink:  make_an_impact
 ---
 
@@ -22,6 +22,50 @@ This application uses “identity” as the connection between users and habits.
 # Implementation
 This application uses a Model-View-Controller structure with CRUD actions, complex forms,  and RESTful routes. 
 
+My core associations were as follows:
+
+```
+class User < ApplicationRecord
+
+    has_many :user_identities, dependent: :destroy
+    has_many :identities, through: :user_identities
+    has_many :habits, through: :identities
+    has_many :steps, dependent: :destroy
+    has_many :streaks, dependent: :destroy
+    has_many :comments, dependent: :destroy
+    has_many :reactions, dependent: :destroy
+		
+end
+		
+class Identity < ApplicationRecord
+    has_many :user_identities, dependent: :destroy
+    has_many :users, through: :user_identities
+    has_many :identity_habits, dependent: :destroy
+    has_many :habits, through: :identity_habits
+    has_many :comments, as: :commentable, dependent: :destroy
+		
+end
+
+class Habit < ApplicationRecord   
+    has_many :streaks, dependent: :destroy
+    has_many :steps, dependent: :destroy
+    has_many :identity_habits, dependent: :destroy
+    has_many :identities, through: :identity_habits
+    has_many :users, through: :identities
+    has_many :comments, as: :commentable, dependent: :destroy
+end
+
+class Step < ApplicationRecord
+  belongs_to :user
+  belongs_to :habit
+end
+		
+```
+
+There is a many to many relationship between users and identities, identities to habits, and users to habits. Actions belong to both a habit and a user.
+
+
+This is a sample of the nested routes available:
 ```
 #nested routes
 
@@ -29,22 +73,18 @@ resources :users do
         resources :identities, only: [:index, :new, :create]
         resources :habits
         resources :steps
-        resources :streaks, only: [:index]
-        resources :comments
+
     end
 
     resources :identities do
         resources :users, only: [:show, :index]
         resources :habits
-        resources :comments
-        resources :reactions
+     
     end
 
     resources :habits do
         resources :steps
-        resources :streaks, only: [:index]
-        resources :comments
-        resources :reactions
+
     end
 ```
 
@@ -53,6 +93,6 @@ resources :users do
 
 # Project Outcome
 
-The core functionality of the application is working as I had envisioned. However, there were some features that I did not yet add to the application. 
+The core functionality of the application is working as I had envisioned. However, there were some features that I did not yet add to the application. Users are able to join an identity, or "pact" and they can unjoin if they wish. They can link habits to the identity and also unlink them as they wish. From the habits, they are able to create action steps for which they will follow to gradually build up their habit.
 
 
