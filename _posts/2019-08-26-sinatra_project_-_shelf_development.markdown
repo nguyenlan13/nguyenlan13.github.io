@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Sinatra Project - Shelf Development"
+title:      "Shelf Development"
 date:       2019-08-26 06:27:38 -0400
 permalink:  sinatra_project_-_shelf_development
 ---
