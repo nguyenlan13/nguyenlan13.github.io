@@ -10,9 +10,11 @@ permalink:  build_your_toolset
 This application was built utilizing a Ruby on Rails backend with session cookies for API authentication, PostgreSQL database,  and a React with Redux frontend.
 
 
+
 ## Adding Tools to Your toolSet
 
 The idea behind this application was to “add a tool” to our mental library or “toolset” in which a learn by teaching methodology is used to learn new concepts. The concepts can be anything the user chooses; the user creates a lesson and each attempt at the lesson is posted to the community for feedback.  The user can make as many attempts as needed in order to fully understand. 
+
 
 
 ## Rails API Backend
@@ -47,6 +49,7 @@ class Attempt < ApplicationRecord
 
 end
 ```
+
 
 ## React Frontend
 
@@ -116,6 +119,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(CategoryTopicContain
 Inheriting from class Component allows the child class to have access to setState() to manage its own state and also have access to lifecycle methods. In this example, the lifecycle method componentDidMount(), which is invoked immediately after the component is mounted,  is used to call an async function to fetch the category topics from the API.
 
 
+
 ## Using Redux
 
 As seen in the CategoryTopicContainer class above, the Redux library is used to manage state with connect() and its mapStateToProps and mapDispatchToProps arguments. Redux is a standalone library and React-Redux is used to bind Redux to React. 
@@ -148,10 +152,10 @@ ReactDOM.render(
     
 document.getElementById('root'));
 
+```
 
-
+```
 // Reducers
-
 
 import { combineReducers } from 'redux'
 import tokenReducer from './tokenReducer'
@@ -174,7 +178,6 @@ const rootReducer = (combineReducers) ({
 })
 
 export default rootReducer
-
 
 ```
 
@@ -248,6 +251,7 @@ export default function topicsReducer(state = {
 ```
 
 The store is updated with the current state by matching the action type to the case statement and using the spefically formatted keys.
+
 
 ## Additional Features
 
