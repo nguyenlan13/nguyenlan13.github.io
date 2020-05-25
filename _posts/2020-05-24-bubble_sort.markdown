@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Bubble Sort"
-date:       2020-05-25 00:33:45 +0000
+date:       2020-05-24 20:33:46 -0400
 permalink:  bubble_sort
 ---
 
@@ -10,7 +10,10 @@ Bubble sort has a notorious reputation for being a “bad” sorting algorithm d
 
 This algorithm has a time complexity of O(n^2) but a space complexity of O(1). It could be useful if the input size is small or if runtime is not important. An implementation of bubble sort in Ruby is below:
 
-```def bubble_sort(array)
+
+
+```
+def bubble_sort(array)
     for i in 0...(array.length - 1) do
         for j in (i + 1)...array.length do
             if array[i] > array[j] 
@@ -26,6 +29,7 @@ bubble_sort([6,4,3,78,1,65])
 
 => [1, 3, 4, 6, 65, 78]
 ```
+
 
 
 
