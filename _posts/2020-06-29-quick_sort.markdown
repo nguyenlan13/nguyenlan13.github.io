@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Quick Sort"
-date:       2020-06-29 06:22:23 +0000
+date:       2020-06-29 02:22:24 -0400
 permalink:  quick_sort
 ---
 
@@ -13,3 +13,22 @@ Quick sort has a worst case time complexity of O(n^2), this occurs if the pivot 
 
 Below is an implementation of the selection sort in JavaScript:
 
+
+```
+
+
+function quickSort(array, lf, rt){
+  const length = array.length; 
+  let pivot;
+  let partitionInd;
+
+  if(lf < rt) {
+    pivot = rt;
+    partitionInd = partition(array, pivot, lf, rt);
+    
+    quickSort(array, lf, partitionInd - 1);
+    quickSort(array, partitionInd + 1, rtt);
+  }
+  return array;
+}
+```
