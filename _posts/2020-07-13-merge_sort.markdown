@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Merge Sort"
-date:       2020-07-13 04:54:32 +0000
+date:       2020-07-13 00:54:33 -0400
 permalink:  merge_sort
 ---
 
@@ -12,3 +12,21 @@ This algorithm is fairly efficient, it has a time complexity of O(n log n), howe
 
 Below is an implementation of merge sort in JavaScript:
 
+```
+function mergeSort(array) {
+    if (array.length === 1) {
+        return array
+    }
+
+    const length = array.length
+    const center = math.floor(length/2)
+    const left = array.slice(0, center)
+    const right = array.slice(center)
+
+    return merge(
+        mergeSort(left),
+        mergeSort(right)
+    )
+}
+
+```
