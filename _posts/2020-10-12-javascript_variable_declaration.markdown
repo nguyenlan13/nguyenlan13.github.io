@@ -8,7 +8,7 @@ permalink:  javascript_variable_declaration
 
 Prior to ES6, variables were declared with Var. Since the JavaScript engine works in two phases, first the complilation phase and then the execution phase, depending on where the variable was declared could cause issues with hoisting. Hoisting occurs when a variable can be used before declaring it.  Hoisting applies to variable declarations but not its assignments. Hoisting allows this to work:
 
-``
+```
      function greeting () {
 		       return "Hello!";
 		 }
@@ -17,11 +17,11 @@ Prior to ES6, variables were declared with Var. Since the JavaScript engine work
 		 
 		 // => "Hello!"
 		 
-	``
+	```
 	
 	the same way as this:
 	
-	``
+	```
 	      greeting();
 			
 			   function greeting () {
